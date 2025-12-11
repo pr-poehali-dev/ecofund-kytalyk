@@ -112,21 +112,21 @@ const Index = () => {
                 Охраняем места гнездования, проводим мониторинг популяции и предотвращаем угрозы для стерхов
               </p>
             </Card>
-            <Card className="p-8 hover:shadow-lg transition-all duration-300 border-2 hover:border-primary">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
-                <Icon name="BookOpen" className="text-accent" size={32} />
+            <Card className="p-8 hover:shadow-lg transition-all duration-300 border-2 hover:border-primary bg-green-500">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                <Icon name="BookOpen" className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Просвещаем</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-2xl font-bold mb-4 text-white">Просвещаем</h3>
+              <p className="text-white/90">
                 Проводим экологические уроки, рассказываем о важности сохранения редких видов
               </p>
             </Card>
-            <Card className="p-8 hover:shadow-lg transition-all duration-300 border-2 hover:border-primary">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                <Icon name="HandHeart" className="text-blue-600" size={32} />
+            <Card className="p-8 hover:shadow-lg transition-all duration-300 border-2 hover:border-primary bg-orange-500">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                <Icon name="HandHeart" className="text-red-500" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Помогаем</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-2xl font-bold mb-4 text-white">Помогаем</h3>
+              <p className="text-white/90">
                 Реабилитируем раненых птиц, восстанавливаем природные территории
               </p>
             </Card>
