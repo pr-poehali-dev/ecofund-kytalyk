@@ -63,7 +63,7 @@ const Index = () => {
             <a href="#volunteer" className="text-foreground hover:text-primary transition">Волонтёрство</a>
             <a href="#contact" className="text-foreground hover:text-primary transition">Контакты</a>
           </div>
-          <Button className="bg-accent hover:bg-accent/90">Поддержать</Button>
+          <Button className="bg-orange-500 hover:bg-orange-600 text-white">Поддержать</Button>
         </div>
       </nav>
 
