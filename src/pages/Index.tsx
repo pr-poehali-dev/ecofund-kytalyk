@@ -32,7 +32,7 @@ const Index = () => {
 
   const team = [
     { name: "Дайбаннырова Мария", role: "Директор фонда", image: "https://cdn.poehali.dev/files/директор.jpg" },
-    { name: "Дайбаннырова Мария", role: "Орнитолог", image: "https://cdn.poehali.dev/files/орнитолог.jpg" },
+    { name: "Владимирцева Мария", role: "Орнитолог", image: "https://cdn.poehali.dev/files/орнитолог.jpg" },
     { name: "Петров Роман", role: "Координатор волонтёров", image: "https://cdn.poehali.dev/files/волонтер.jpg" }
   ];
 
