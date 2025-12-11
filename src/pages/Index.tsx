@@ -51,7 +51,7 @@ const Index = () => {
               alt="Логотип Кыталык" 
               className="h-12 w-auto"
             />
-            <span className="font-bold text-xl text-foreground">Кыталык</span>
+            <span className="text-2xl text-foreground" style={{fontFamily: 'Cormorant, serif', fontWeight: 600, letterSpacing: '0.02em'}}>Экологический фонд</span>
           </div>
           <div className="hidden md:flex gap-6">
             <a href="#about" className="text-foreground hover:text-primary transition">О фонде</a>
@@ -290,7 +290,7 @@ const Index = () => {
                   alt="Логотип Кыталык" 
                   className="h-10 w-auto brightness-0 invert"
                 />
-                <span className="font-bold text-xl">Кыталык</span>
+                <span className="text-xl" style={{fontFamily: 'Cormorant, serif', fontWeight: 600, letterSpacing: '0.02em'}}>Экологический фонд</span>
               </div>
               <p className="text-white/70">Сохраняем природу Якутии</p>
             </div>
