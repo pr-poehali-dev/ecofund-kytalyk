@@ -13,17 +13,20 @@ const Index = () => {
     {
       title: "Мониторинг популяции стерха",
       description: "Систематическое наблюдение за численностью и миграционными путями стерхов в Якутии",
-      icon: "Binoculars"
+      icon: "Binoculars",
+      image: "https://cdn.poehali.dev/files/8 Стая стерхов на территории гнездования Фото Слепцов СМ.JPG"
     },
     {
       title: "Восстановление мест обитания",
       description: "Сохранение и восстановление водно-болотных угодий для гнездования краснокнижных птиц",
-      icon: "Trees"
+      icon: "Trees",
+      image: "https://cdn.poehali.dev/files/Тундра 1.png.jpg"
     },
     {
       title: "Образовательные программы",
       description: "Экологическое просвещение школьников и студентов о важности сохранения биоразнообразия",
-      icon: "GraduationCap"
+      icon: "GraduationCap",
+      image: "https://cdn.poehali.dev/files/Экоуроки.png"
     }
   ];
 
@@ -140,11 +143,19 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {projects.map((project, idx) => (
               <Card key={idx} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
-                <div className="h-48 bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center">
-                  <Icon name={project.icon} className="text-white group-hover:scale-110 transition-transform" size={64} />
+                <div className="h-48 relative overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon name={project.icon} className="text-primary" size={24} />
+                    <h3 className="text-xl font-bold">{project.title}</h3>
+                  </div>
                   <p className="text-muted-foreground mb-4">{project.description}</p>
                   <Button variant="link" className="p-0 text-primary">
                     Подробнее <Icon name="ArrowRight" className="ml-1" size={16} />
