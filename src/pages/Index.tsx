@@ -86,7 +86,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/1 Стерх в небе Фото Слепцов СМ.JPG" 
                 alt="Стерх в полёте" 
-                className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+                className="shadow-2xl w-full h-[400px] object-cover rounded-full"
               />
             </div>
           </div>
