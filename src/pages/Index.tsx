@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Index = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [selectedAmount, setSelectedAmount] = useState<number | 'custom'>(500);
+  const [selectedAmount, setSelectedAmount] = useState<number | 'custom'>(5000);
   const [customAmount, setCustomAmount] = useState('');
 
   const projects = [
@@ -265,28 +265,41 @@ const Index = () => {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-4">Поддержать фонд</h3>
               <div className="space-y-4">
-                <div className="grid grid-cols-3 gap-2">
-                  <Button
-                    variant={selectedAmount === 500 ? "default" : "outline"}
-                    onClick={() => setSelectedAmount(500)}
-                    className={selectedAmount === 500 ? "bg-orange-500 hover:bg-orange-600" : ""}
-                  >
-                    500 ₽
-                  </Button>
-                  <Button
-                    variant={selectedAmount === 1000 ? "default" : "outline"}
-                    onClick={() => setSelectedAmount(1000)}
-                    className={selectedAmount === 1000 ? "bg-orange-500 hover:bg-orange-600" : ""}
-                  >
-                    1000 ₽
-                  </Button>
-                  <Button
-                    variant={selectedAmount === 'custom' ? "default" : "outline"}
-                    onClick={() => setSelectedAmount('custom')}
-                    className={selectedAmount === 'custom' ? "bg-orange-500 hover:bg-orange-600" : ""}
-                  >
-                    Другая
-                  </Button>
+                <p className="text-sm text-muted-foreground">
+                  Вы можете поддержать работу Фонда пожертвованиями. Все собранные средства идут на реализацию различных проектов Фонда, а значит, на помощь стерхам и другим краснокнижным видам Якутии.
+                </p>
+                <div>
+                  <p className="font-bold mb-3">Сумма пожертвования</p>
+                  <div className="grid grid-cols-4 gap-2">
+                    <Button
+                      variant={selectedAmount === 5000 ? "default" : "outline"}
+                      onClick={() => setSelectedAmount(5000)}
+                      className={selectedAmount === 5000 ? "bg-orange-500 hover:bg-orange-600" : ""}
+                    >
+                      5000
+                    </Button>
+                    <Button
+                      variant={selectedAmount === 1500 ? "default" : "outline"}
+                      onClick={() => setSelectedAmount(1500)}
+                      className={selectedAmount === 1500 ? "bg-orange-500 hover:bg-orange-600" : ""}
+                    >
+                      1500
+                    </Button>
+                    <Button
+                      variant={selectedAmount === 500 ? "default" : "outline"}
+                      onClick={() => setSelectedAmount(500)}
+                      className={selectedAmount === 500 ? "bg-orange-500 hover:bg-orange-600" : ""}
+                    >
+                      500
+                    </Button>
+                    <Button
+                      variant={selectedAmount === 'custom' ? "default" : "outline"}
+                      onClick={() => setSelectedAmount('custom')}
+                      className={selectedAmount === 'custom' ? "bg-orange-500 hover:bg-orange-600" : ""}
+                    >
+                      Другая
+                    </Button>
+                  </div>
                 </div>
                 {selectedAmount === 'custom' && (
                   <Input
