@@ -45,8 +45,12 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">К</div>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/files/yuvarlak-icinde-simge-seklinde-ucan-leylek-sticker-mavi-400x400.png" 
+              alt="Логотип Кыталык" 
+              className="h-12 w-auto"
+            />
             <span className="font-bold text-xl text-foreground">Кыталык</span>
           </div>
           <div className="hidden md:flex gap-6">
@@ -280,8 +284,12 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">К</div>
+              <div className="flex items-center gap-3 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/yuvarlak-icinde-simge-seklinde-ucan-leylek-sticker-mavi-400x400.png" 
+                  alt="Логотип Кыталык" 
+                  className="h-10 w-auto brightness-0 invert"
+                />
                 <span className="font-bold text-xl">Кыталык</span>
               </div>
               <p className="text-white/70">Сохраняем природу Якутии</p>
