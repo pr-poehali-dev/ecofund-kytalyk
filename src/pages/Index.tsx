@@ -16,7 +16,7 @@ const Index = () => {
       title: "Мониторинг популяции стерха",
       description: "Систематическое наблюдение за численностью и миграционными путями стерхов в Якутии",
       icon: "Binoculars",
-      image: "https://cdn.poehali.dev/files/22 Стерх в небе.JPG"
+      image: "https://cdn.poehali.dev/files/22.JPG"
     },
     {
       title: "Восстановление мест обитания",
