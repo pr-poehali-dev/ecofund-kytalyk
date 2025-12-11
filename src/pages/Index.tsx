@@ -143,7 +143,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {projects.map((project, idx) => (
               <Card key={idx} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
-                <div className={`relative overflow-hidden ${idx === 1 ? 'h-64' : idx === 2 ? 'h-40' : 'h-48'}`}>
+                <div className="h-48 relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
