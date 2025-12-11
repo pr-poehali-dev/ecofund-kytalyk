@@ -103,12 +103,12 @@ const Index = () => {
             <p className="text-lg text-muted-foreground">Три направления нашей работы</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 hover:shadow-lg transition-all duration-300 border-2 hover:border-primary">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                <Icon name="Shield" className="text-primary" size={32} />
+            <Card className="p-8 hover:shadow-lg transition-all duration-300 border-2 hover:border-primary bg-blue-500">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                <Icon name="Shield" className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Защищаем</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-2xl font-bold mb-4 text-white">Защищаем</h3>
+              <p className="text-white/90">
                 Охраняем места гнездования, проводим мониторинг популяции и предотвращаем угрозы для стерхов
               </p>
             </Card>
