@@ -329,13 +329,13 @@ const Index = () => {
               <h4 className="font-bold mb-4">Социальные сети</h4>
               <div className="flex gap-3">
                 <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition">
-                  <Icon name="Facebook" size={20} />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.536 2H5.464A3.464 3.464 0 0 0 2 5.464v10.072A3.464 3.464 0 0 0 5.464 19h10.072A3.464 3.464 0 0 0 19 15.536V5.464A3.464 3.464 0 0 0 15.536 2zm-3.536 6.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM7 11.5a2.5 2.5 0 1 1 4.958.5H13a1 1 0 0 1 .958.713l.542 1.897a.5.5 0 0 1-.479.64h-7.042a.5.5 0 0 1-.479-.64l.542-1.897A1 1 0 0 1 7.958 12H9a2.5 2.5 0 0 1-2-1zm9 3.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm0-4h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"/></svg>
                 </a>
                 <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition">
-                  <Icon name="Instagram" size={20} />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm4.343 7.757l-5.656 5.656a1 1 0 0 1-1.414 0l-2.828-2.828a1 1 0 0 1 1.414-1.414L10 13.313l4.95-4.95a1 1 0 0 1 1.414 1.414z"/></svg>
                 </a>
                 <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition">
-                  <Icon name="Youtube" size={20} />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg>
                 </a>
               </div>
             </div>
