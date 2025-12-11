@@ -101,7 +101,7 @@ const Index = () => {
       <section id="about" className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Чем мы помогаем стерхам?</h2>
+            <h2 className="font-bold text-foreground mb-4 text-4xl">Чем мы помогаем стерхам?</h2>
             <p className="text-lg text-muted-foreground">Три направления нашей работы</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
