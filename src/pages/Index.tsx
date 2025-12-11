@@ -224,7 +224,7 @@ const Index = () => {
               <Icon name="Mail" className="mr-2" size={20} />
               Связаться с нами
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
               Узнать подробности
             </Button>
           </div>
