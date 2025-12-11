@@ -31,9 +31,9 @@ const Index = () => {
   ];
 
   const team = [
-    { name: "Анна Соловьёва", role: "Директор фонда", avatar: "A" },
-    { name: "Иван Петров", role: "Орнитолог", avatar: "И" },
-    { name: "Мария Николаева", role: "Координатор волонтёров", avatar: "М" }
+    { name: "Дайбаннырова Мария", role: "Директор фонда", image: "https://cdn.poehali.dev/files/директор.jpg" },
+    { name: "Дайбаннырова Мария", role: "Орнитолог", image: "https://cdn.poehali.dev/files/орнитолог.jpg" },
+    { name: "Петров Роман", role: "Координатор волонтёров", image: "https://cdn.poehali.dev/files/волонтер.jpg" }
   ];
 
   const lessons = [
@@ -176,8 +176,12 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, idx) => (
               <Card key={idx} className="p-8 text-center hover:shadow-lg transition-all">
-                <div className="w-24 h-24 bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
-                  {member.avatar}
+                <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                 <p className="text-muted-foreground">{member.role}</p>
