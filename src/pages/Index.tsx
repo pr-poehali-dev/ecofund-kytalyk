@@ -8,6 +8,8 @@ import { useState } from "react";
 
 const Index = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [selectedAmount, setSelectedAmount] = useState<number | 'custom'>(500);
+  const [customAmount, setCustomAmount] = useState('');
 
   const projects = [
     {
@@ -232,8 +234,8 @@ const Index = () => {
       </section>
 
       <section id="contact" className="py-20 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-12">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6">Свяжитесь с нами</h2>
               <div className="space-y-4">
@@ -260,6 +262,45 @@ const Index = () => {
                 </div>
               </div>
             </div>
+            <Card className="p-6">
+              <h3 className="text-xl font-bold mb-4">Поддержать фонд</h3>
+              <div className="space-y-4">
+                <div className="grid grid-cols-3 gap-2">
+                  <Button
+                    variant={selectedAmount === 500 ? "default" : "outline"}
+                    onClick={() => setSelectedAmount(500)}
+                    className={selectedAmount === 500 ? "bg-orange-500 hover:bg-orange-600" : ""}
+                  >
+                    500 ₽
+                  </Button>
+                  <Button
+                    variant={selectedAmount === 1000 ? "default" : "outline"}
+                    onClick={() => setSelectedAmount(1000)}
+                    className={selectedAmount === 1000 ? "bg-orange-500 hover:bg-orange-600" : ""}
+                  >
+                    1000 ₽
+                  </Button>
+                  <Button
+                    variant={selectedAmount === 'custom' ? "default" : "outline"}
+                    onClick={() => setSelectedAmount('custom')}
+                    className={selectedAmount === 'custom' ? "bg-orange-500 hover:bg-orange-600" : ""}
+                  >
+                    Другая
+                  </Button>
+                </div>
+                {selectedAmount === 'custom' && (
+                  <Input
+                    type="number"
+                    placeholder="Введите сумму"
+                    value={customAmount}
+                    onChange={(e) => setCustomAmount(e.target.value)}
+                  />
+                )}
+                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
+                  Поддержать
+                </Button>
+              </div>
+            </Card>
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-4">Отправить сообщение</h3>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
