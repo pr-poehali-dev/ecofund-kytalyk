@@ -22,13 +22,13 @@ const Index = () => {
       title: "Восстановление мест обитания",
       description: "Сохранение и восстановление водно-болотных угодий для гнездования краснокнижных птиц",
       icon: "Trees",
-      image: "https://cdn.poehali.dev/files/Тундра 1.png.jpg"
+      image: "https://cdn.poehali.dev/files/23.jpg"
     },
     {
       title: "Образовательные программы",
       description: "Экологическое просвещение школьников и студентов о важности сохранения биоразнообразия",
       icon: "GraduationCap",
-      image: "https://cdn.poehali.dev/files/Экоуроки.png"
+      image: "https://cdn.poehali.dev/files/24.jpg"
     }
   ];
 
